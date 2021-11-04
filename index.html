@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco del tris</title>
+
+    <link rel="stylesheet" href="stili.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Gioco del tris</h1>
+
+    <table border="0" id="tabellaPulsanti">
+        <tr>
+            <td>
+                <input type="button" id="CPU" value="Gioca contro il PC" onclick="GiocoPC()">
+            </td>
+
+            <td>
+                <label id="giocatore2" name="giocatore2">Sta giocando giocatore 2</label>
+            </td>
+
+            <td>
+                <input type="button" id="iniziaCPU" value="Fai iniziare il PC" onclick="IniziaCPU()">
+            </td>
+        </tr>
+    </table>
+
+    <table border="1" name="tabellaGioco" id="tabellaGioco">
+        <tr>
+            <td>
+                <div align="center">
+                    <img src="https://bit.ly/3nInQ4a" name="0,0" id="0,0" onclick="Gioca('0,0')">
+                </div>
+            </td>
+
+            <td>
+                <div align="center"> 
+                    <img src="https://bit.ly/3nInQ4a" name="0,1" id="0,1" onclick="Gioca('0,1')">
+                </div>
+            </td>
+
+            <td>
+                <div align="center">
+                    <img src="https://bit.ly/3nInQ4a" name="0,2" id="0,2" onclick="Gioca('0,2')">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div align="center">
+                    <img src="https://bit.ly/3nInQ4a" name="1,0" id="1,0" onclick="Gioca('1,0')">
+                </div>
+            </td>
+
+            <td>
+                <div align="center"> 
+                    <img src="https://bit.ly/3nInQ4a" name="1,1" id="1,1" onclick="Gioca('1,1')">
+                </div>
+            </td>
+
+            <td>
+                <div align="center">
+                    <img src="https://bit.ly/3nInQ4a" name="1,2" id="1,2" onclick="Gioca('1,2')">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div align="center">
+                    <img src="https://bit.ly/3nInQ4a" name="2,0" id="2,0" onclick="Gioca('2,0')">
+                </div>
+            </td>
+
+            <td>
+                <div align="center"> 
+                    <img src="https://bit.ly/3nInQ4a" name="2,1" id="2,1" onclick="Gioca('2,1')">
+                </div>
+            </td>
+
+            <td>
+                <div align="center">
+                    <img src="https://bit.ly/3nInQ4a" name="2,2" id="2,2" onclick="Gioca('2,2')">
+                </div>
+            </td>
+        </tr>
+    </table>    
+</body>
+</html>
